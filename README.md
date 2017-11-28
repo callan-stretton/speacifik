@@ -7,6 +7,8 @@ A continuation from a Hackathon group project, a language learning app aimed spe
 1. Preparation
 - Clone this repository ```git clone https://github.com/callan-stretton/speacifik```
 - Run ```npm i```
+- Run ```npm run knex migrate:latest```
+- Run ```npm run knex seed:run```
 - Run ```npm start```
 - Visit [http://localhost:3000](http://localhost:3000)
 

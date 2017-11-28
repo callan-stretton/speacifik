@@ -28,6 +28,12 @@ a {
   font-weight: bold;
 }
 
+.phrase {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
 
 button {
   background-color: "red";
@@ -98,10 +104,11 @@ span {
 img{
     /* background-position: center; */
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border: 2px dashed white;
   background-size: cover;
+  background-color: rgb(150, 171, 230);
 }
 
 .footer {

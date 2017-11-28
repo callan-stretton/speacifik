@@ -32,8 +32,8 @@ class SinglePhrase extends React.Component {
     return (
 
       <div className='scenario'>
-        <p>{this.props.phrase.phrase}</p>
-        <p>{this.props.phrase.samoanPhrase}</p>
+        <p className='phrase'>{this.props.phrase.phrase}</p>
+        <p className='phrase'>{this.props.phrase.samoanPhrase}</p>
 
         {this.state.playSound && <Sound
           url={this.props.phrase.soundFile}

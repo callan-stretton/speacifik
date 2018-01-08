@@ -5,11 +5,11 @@ exports.seed = function (knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('scenarios').insert([
-        {id: 1, scenario: 'Greeting', language_id: 1},
-        {id: 2, scenario: 'Coffee', language_id: 1},
-        {id: 3, scenario: 'Help', language_id: 1},
-        {id: 4, scenario: 'Family', language_id: 1},
-        {id: 5, scenario: 'Food', language_id: 1}
+        {id: 1, scenario: 'Greeting', image: '/images/greeting.png', language_id: 1},
+        {id: 2, scenario: 'Coffee', image: '/images/coffee.png', language_id: 1},
+        {id: 3, scenario: 'Help', image: '/images/help.png', language_id: 1},
+        {id: 4, scenario: 'Family', image: '/images/family.png', language_id: 1},
+        {id: 5, scenario: 'Food', image: '/images/food.png', language_id: 1}
       ])
     })
 }

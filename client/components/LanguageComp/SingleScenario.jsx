@@ -6,7 +6,7 @@ const SingleScenario = (props) => {
   return (
     <div className='languageOpt'>
       <Link to={`/scenarios/${props.scenario.id}/phrases`}><div className='scenario'>
-        <img />
+        <img src={props.scenario.image}/>
         <p>{props.scenario.scenario}</p>
       </div>
       </Link>

@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { fetchScenarios } from '../../actions/scenarios'
 import SingleScenario from './SingleScenario.jsx'
+import Translate from './Translate.jsx'
 
 class Scenarios extends React.Component {
   componentDidMount () {
@@ -19,6 +20,7 @@ class Scenarios extends React.Component {
             </div>
           )
         })}
+        <Translate />
       </div>
     )
   }

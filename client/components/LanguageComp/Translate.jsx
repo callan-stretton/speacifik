@@ -1,11 +1,13 @@
-import React { Component } from 'react'
+import React from 'react'
 
-class Translate extends Component {
-  constructor(props) {
+class Translate extends React.Component {
+  constructor (props) {
     super(props)
   }
-  render() {
-    return <div></div>
+  render () {
+    return <div>
+      <h3>I am the Translate component</h3>
+    </div>
   }
 }
 

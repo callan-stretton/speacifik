@@ -14,6 +14,11 @@ const propTypes = {
 class Translate extends React.Component {
   constructor (props) {
     super(props)
+    this.state = {
+      finalTranscript: '',
+      finished: false,
+      transcriptStarted: false
+    }
   }
   render () {
     return <div>

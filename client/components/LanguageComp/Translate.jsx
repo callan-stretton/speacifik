@@ -38,7 +38,7 @@ class Translate extends React.Component {
       <button onClick={startListening}>Start</button>
       <button onClick={stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
-      <span>{transcript}</span>
+      <input type='text' value={transcript} />
     </div>
   }
 }

@@ -1,6 +1,5 @@
 import React, { PropTypes, Component } from 'react'
 import SpeechRecognition from 'react-speech-recognition'
-import { connect } from 'react-redux'
 
 const propTypes = {
   transcript: PropTypes.string,
@@ -36,11 +35,18 @@ class Translate extends React.Component {
       return null
     }
     return <div>
-      <h3>I am the Translate component</h3>
+      <button onClick={startListening}>Start</button>
+      <button onClick={stopListening}>Stop</button>
+      <button onClick={resetTranscript}>Reset</button>
+      <span>{transcript}</span>
     </div>
   }
 }
 
 Translate.propTypes = propTypes
 
-export default Translate
+const options = {
+  autoStart: false
+}
+
+export default SpeechRecognition(options)(Translate)

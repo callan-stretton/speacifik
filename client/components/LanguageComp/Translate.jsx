@@ -23,10 +23,14 @@ class Translate extends React.Component {
   componentWillReceiveProps ({ finalTranscript, transcript, randomVid, dispatch, round }) {
     if (finalTranscript.length && !this.state.finished) { // IF STATETMENT: if finalTranscript.length is truthy and the state of finished is false
       this.setState({ finished: true }) // set the state of finished to true (to not exceed call stack)
-      this.compareFinalTranscript(finalTranscript)
+      this.convert(finalTranscript)
     } else if (transcript.length && !this.state.transcriptStarted) {
       this.setState({ transcriptStarted: true })
     }
+  }
+
+  convert (finalTranscript) {
+    console.log(`I will translate ${finalTranscript}`)
   }
 
   render () {

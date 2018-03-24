@@ -30,7 +30,12 @@ class Translate extends React.Component {
   }
 
   convert (finalTranscript) {
-    console.log(`I will translate ${finalTranscript}`)
+    console.log(`I will translate: "${finalTranscript}"`)
+  }
+
+  resetSentence (resetTranscript) {
+    resetTranscript()
+    this.setState({ finished: false })
   }
 
   render () {
@@ -41,7 +46,7 @@ class Translate extends React.Component {
     return <div>
       <button onClick={startListening}>Start</button>
       <button onClick={stopListening}>Stop</button>
-      <button onClick={resetTranscript}>Reset</button>
+      <button onClick={() => this.resetSentence(resetTranscript)}>Reset</button>
       <input type='text' value={transcript} />
     </div>
   }

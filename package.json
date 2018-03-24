@@ -46,6 +46,7 @@
     "body-parser": "^1.15.2",
     "cors": "^2.8.3",
     "express": "^4.14.0",
+    "google-translate-api": "^2.3.0",
     "jsdom": "^11.0.0",
     "jsx-loader": "^0.13.2",
     "knex": "^0.13.0",
